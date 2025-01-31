@@ -32,6 +32,7 @@
                         clifford: '#da373d',
                         'color-cream': '#FFF9F4',
                         'color-yellow': '#FFDC26',
+                        'color-yellow-half': 'rgba(255, 220, 38, 0.5)',
                         'color-gray': '#111111',
                         'color-brown': '#F9DF8A',
                         'color-star': '#FFC107',
@@ -39,6 +40,7 @@
                         'color-yellow-2': '#F9DF8A',
                         'color-blue-1': '#F8CCFB',
                         'color-blue-2': '#ACD2FD',
+                        'color-input-text': '#C4C4C4',
                     }
                 }
             }
@@ -324,7 +326,7 @@
                 <h2 class="font-adlam-display text-2xl lg:text-4xl">Everyday low Price</h2>
             </div>
             <!-- cards -->
-             <div class="flex flex-col lg:flex-row gap-10 mb-40">
+             <div class="flex flex-col lg:flex-row gap-10 ">
                 <!-- card 1  -->
                  <div class="hidden lg:block w-full lg:w-[65%]">
                     <div class="flex justify-around items-center bg-gradient-to-r from-color-blue-1 to-color-blue-2 rounded-xl gap-5">
@@ -350,7 +352,7 @@
                 <div class="hidden lg:block lg:w-[30%] bg-gradient-to-r from-color-yellow-1 to-color-yellow-2  rounded-xl px-10 space-y-1">
                     <h2 class="font-adlam-display text-2xl font-semibold my-8 relative z-20">T- Shirt For Dogs</h2>
                     <h2 class="font-adlam-display text-color-yellow text-3xl font-bold relative z-20">$7.99</h2>
-                    <img class="relative -top-10 z-0 left-40" src="images/cute-pet-mid.png" alt="">
+                    <img class="relative -top-10 z-0 left-16" src="images/cute-pet-mid.png" alt="">
                 </div>
                 <div class="lg:hidden bg-gradient-to-r from-color-yellow-1 to-color-yellow-2  rounded-xl p-2">
                     <h2 class="font-adlam-display text-2xl font-semibold my-8 relative z-20">T- Shirt For Dogs</h2>
@@ -359,9 +361,57 @@
                 </div>
              </div>
          </section>
+         <!-- Get Pawsome News! section -->
+          <section class="w-11/12 mx-auto bg-color-cream py-10 rounded-xl relative -bottom-40">
+            <div class="flex flex-col lg:flex-row justify-around items-center gap-5">
+                <!-- image -->
+                 <div>
+                    <img src="images/cute-pet-mid.png" alt="">
+                 </div>
+                 <!-- content -->
+                  <div>
+                    <div class="text-center flex flex-col justify-start items-center lg:items-start">
+                        <h3 class="font-adlam-display text-4xl">Get Pawsome News!</h3>
+                        <p class="text-xl py-6">
+                            Exclusive training tips, ticks, product deals and more.
+                        </p>
+                        <input class="text-color-input-text bg-white rounded-xl p-5" placeholder="Enter email...." type="text">
+                        <br>
+                        <button class="btn bg-color-yellow px-8 text-xl">Subscribe</button>
+                      </div>
+                  </div>
+            </div>
+          </section>
     </main>
     <!-- footer section -->
-    <footer></footer>
+    <footer class="bg-color-yellow-half">
+        <div class="w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 pt-60 pb-20">
+            <!-- first -->
+             <div>
+                <div class="flex items-center gap-5 pb-5">
+                    <img class="" src="images/logo-footer.png" alt="">
+                    <h3 class="text-2xl">Browse4Pets</h3>
+                </div>
+                <p class="text-xl">Discover a world of treats, toys, and <br> essentials handpicked for your furry <br> friends</p>
+             </div>
+            <!-- second -->
+            <div class="text-xl space-y-5">
+                <p>Find a pet</p>
+                <p>Breeds</p>
+                <p>Contact us</p>
+            </div>
+            <!-- third -->
+            <div class="pt-10 lg:p-16">
+                <p class="font-bold text-xl pb-5">Follow Us</p>
+                <div class="space-x-5 text-xl">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
