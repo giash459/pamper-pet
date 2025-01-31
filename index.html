@@ -35,6 +35,10 @@
                         'color-gray': '#111111',
                         'color-brown': '#F9DF8A',
                         'color-star': '#FFC107',
+                        'color-yellow-1': '#FFF9F4',
+                        'color-yellow-2': '#F9DF8A',
+                        'color-blue-1': '#F8CCFB',
+                        'color-blue-2': '#ACD2FD',
                     }
                 }
             }
@@ -45,6 +49,7 @@
 <body class="font-sora">
     <!-- https://v3.tailwindcss.com/  -->
     <!-- https://github.com/giash459/pamper-pet -->
+     <!-- https://giash459.github.io/pamper-pet/ -->
     <!-- header section -->
     <header>
         <!-- navbar section -->
@@ -77,13 +82,6 @@
         </nav>
         <!-- banner section -->
         <div class="w-11/12 mx-auto mt-16 space-y-5">
-            <!-- <div class="h-[750px] bg-no-repeat hidden lg:block"style="background-image: url('images/cat-big.png')">
-                <h1 class="font-adlam-display text-6xl font-semibold my-8">Pamper Your Pet, <br> Because They Deserve
-                    <br> the Bes</h1>
-                <p class="text-xl mb-8">Discover a world of treats, toys, and essentials handpicked for <br> your furry
-                    friends. Shop now and make tails wag with joy!</p>
-                <a class="btn bg-color-yellow px-8">Find a pet</a>
-            </div> -->
             <div class="hidden lg:block">
                 <h1 class="font-adlam-display text-6xl font-semibold my-8 relative z-20">Pamper Your Pet, <br> Because
                     They Deserve
@@ -320,6 +318,47 @@
                 </div>
             </div>
         </section>
+        <!-- Everyday low Price section -->
+         <section class="w-11/12 mx-auto">
+            <div class="py-20">
+                <h2 class="font-adlam-display text-2xl lg:text-4xl">Everyday low Price</h2>
+            </div>
+            <!-- cards -->
+             <div class="flex flex-col lg:flex-row gap-10 mb-40">
+                <!-- card 1  -->
+                 <div class="hidden lg:block w-full lg:w-[65%]">
+                    <div class="flex justify-around items-center bg-gradient-to-r from-color-blue-1 to-color-blue-2 rounded-xl gap-5">
+                        <div class="space-y-5">
+                            <p>Under Price</p>
+                            <h2 class="font-adlam-display text-2xl font-semibold">Pet Grooming Mitt</h2>
+                          <p class="font-adlam-display text-white text-xl">(Easy Hair Removal)</p>
+                          <h2 class="font-adlam-display text-3xl font-bold">$7.99</h2>
+                        </div>
+                        <div>
+                            <img
+                              src="images/cute-dog-mid.png"
+                              alt="Movie" class="" />
+                        </div>
+                    </div>
+                 </div>
+                 <div class="lg:hidden bg-gradient-to-r from-color-blue-1 to-color-blue-2 rounded-xl p-2">
+                    <h2 class="font-adlam-display text-2xl font-semibold my-8 relative z-20">Pet Grooming Mitt</h2>
+                    <h2 class="font-adlam-display text-white text-3xl font-bold relative z-20">$7.99</h2>
+                    <img class="relative -top-5 z-0" src="images/cute-dog-mid.png" alt="">
+                </div>
+                <!-- card 2  -->
+                <div class="hidden lg:block lg:w-[30%] bg-gradient-to-r from-color-yellow-1 to-color-yellow-2  rounded-xl px-10 space-y-1">
+                    <h2 class="font-adlam-display text-2xl font-semibold my-8 relative z-20">T- Shirt For Dogs</h2>
+                    <h2 class="font-adlam-display text-color-yellow text-3xl font-bold relative z-20">$7.99</h2>
+                    <img class="relative -top-10 z-0 left-40" src="images/cute-pet-mid.png" alt="">
+                </div>
+                <div class="lg:hidden bg-gradient-to-r from-color-yellow-1 to-color-yellow-2  rounded-xl p-2">
+                    <h2 class="font-adlam-display text-2xl font-semibold my-8 relative z-20">T- Shirt For Dogs</h2>
+                    <h2 class="font-adlam-display text-color-yellow text-3xl font-bold relative z-20">$7.99</h2>
+                    <img class="relative -top-10 z-0 left-5" src="images/cute-pet-mid.png" alt="">
+                </div>
+             </div>
+         </section>
     </main>
     <!-- footer section -->
     <footer></footer>
